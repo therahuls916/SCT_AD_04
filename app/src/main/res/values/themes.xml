@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- 1. This is the theme for the system splash screen. -->
+    <style name="Theme.App.Starting" parent="Theme.SplashScreen">
+        <!-- Set the background to your app's dark green color -->
+        <item name="windowSplashScreenBackground">@color/app_background</item>
+
+        <!-- Set the icon to your launcher icon -->
+        <item name="windowSplashScreenAnimatedIcon">@mipmap/ic_launcher</item>
+
+        <!-- Set the theme to transition to after the splash is over -->
+        <item name="postSplashScreenTheme">@style/Theme.AuricScan</item>
+    </style>
+
+    <!-- 2. This is your main app theme. It remains mostly the same. -->
+    <style name="Theme.AuricScan" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="android:windowBackground">@color/app_background</item>
+        <item name="android:statusBarColor">@color/app_background</item>
+        <item name="android:navigationBarColor">@color/app_background</item>
+    </style>
+
+</resources>
